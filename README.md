@@ -17,7 +17,7 @@ Options
 
 `--id` Organism id from the Catalogue of Life
 
-`--color` (Optional) Fill color of the countries the organism has been sampled from
+`--color` Fill color of the countries the organism has been sampled from __(Optional)__
   
-`--out` (Optional) Path of the resulting map file
+`--out` Path of the resulting map file __(Optional)__
     

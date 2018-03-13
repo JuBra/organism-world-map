@@ -20,7 +20,7 @@ BASEPATH = os.path.dirname(os.path.abspath(__file__))
 CWD = os.getcwd()
 
 # Generate path to data files
-SVG = os.path.join(BASEPATH, "data", "map_world.svg")
+SVG = os.path.join(BASEPATH, "data", "world_map.svg")
 CODES = os.path.join(BASEPATH, "data", "codes.txt")
 MAPPING = os.path.join(BASEPATH, "data", "mapping_loc_country.json")
 

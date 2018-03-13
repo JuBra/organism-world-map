@@ -1,7 +1,7 @@
 # Organism World Map
 
 Generate world maps displaying the distribution of biological species. This script uses the data from the
-[catalogue of life](http://www.catalogueoflife.org) and maps it onto a world map provided by [amcharts](https://www.amcharts.com/svg-maps/).
+[catalogue of life](http://www.catalogueoflife.org) project and maps it onto a world map provided by [amcharts](https://www.amcharts.com/svg-maps/) under the Create Common License.
 
 
 Usage

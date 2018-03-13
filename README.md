@@ -6,7 +6,7 @@ Generate world maps displaying the distribution of individual species. This scri
 Usage
 =====
 
-Example::
+Example:
 
     python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 

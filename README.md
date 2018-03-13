@@ -1,7 +1,7 @@
 # Organism World Map
 
 Generate world maps displaying the distribution of biological species. This script uses the data from the
-[Catalogue of Life](http://www.catalogueoflife.org) and maps it onto a world map provided by [amcharts](https://www.amcharts.com/svg-maps/).
+[catalogue of life](http://www.catalogueoflife.org) and maps it onto a world map provided by [amcharts](https://www.amcharts.com/svg-maps/).
 
 
 Usage
@@ -9,7 +9,7 @@ Usage
 
 __Example:__ Generating a map for Aspergillus niger.
 
-Lookup the id on the [Catalogue of Life](http://www.catalogueoflife.org/col/search/) website by searching for Aspergillus niger. The id is displayed in the url bar of the browser: `catalogueoflife.org/../id/ea00b3b8c44dbcf76443e20f78411dc2`
+Lookup the id on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/__ea00b3b8c44dbcf76443e20f78411dc2__
 ````shell
 python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````

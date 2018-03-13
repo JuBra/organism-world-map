@@ -9,7 +9,7 @@ Usage
 
 __Example:__
 
-To generate a map lookup the id of the organism on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for the name e.g. Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`.
+To generate a map look up the id of the organism on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for the name e.g. Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`.
 
 Run the script:
 ````shell

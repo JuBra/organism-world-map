@@ -9,12 +9,15 @@ Usage
 
 __Example:__ Generating a map for Aspergillus niger.
 
-Lookup the id on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`
+Lookup the id on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`.
+
+Run the script:
 ````shell
 python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````
 
 __Output:__
+
 ![Example](https://github.com/JuBra/organism-world-map/raw/docs/img/example.png)
 
 Options

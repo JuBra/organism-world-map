@@ -20,7 +20,7 @@ BASEPATH = os.path.dirname(os.path.abspath(__file__))
 CWD = os.getcwd()
 
 # Generate path to data files
-SVG = os.path.join(BASEPATH, "data", "map_world.svg")
+SVG = os.path.join(BASEPATH, "data", "world_map.svg")
 CODES = os.path.join(BASEPATH, "data", "codes.txt")
 MAPPING = os.path.join(BASEPATH, "data", "mapping_loc_country.json")
 
@@ -42,8 +42,8 @@ def load_mapping(path=MAPPING):
 
     :param path: str,
         File containing the mapping
-    :return: substitutions: dict,
-        Parsed mapping
+    :return: mapping: dict,
+        Parsed mapping converted to lowercase
     """
 
     with open(path) as f:
@@ -76,10 +76,10 @@ def load_codes(path=CODES):
 def get_country_codes(locations):
     """ Get the locations where a species has been reported
 
-    :param orgid: str,
-        Organism id from the Catalogue of Life
-    :return:
-
+    :param locations: list,
+        Locations listed in the catalogue of life entry
+    :return result: set,
+        Country codes of the sampling locations
 
     """
 
@@ -114,8 +114,10 @@ def get_information(orgid):
 
     See format specs: http://webservice.catalogueoflife.org/
 
-    :param orgid: str
-    :return: set
+    :param orgid: str,
+        Id of the organism in the catalogue of life
+    :return locations: set,
+        Locations the organism has been recorded in
     """
 
     locations = set()
@@ -152,11 +154,20 @@ def get_information(orgid):
     return org_name, locations
 
 
-def main(id, color, out):
+def main(orgid, color, out):
+    """ Run the map generation
+
+    :param orgid: str,
+        Organism id in the catalogue of life
+    :param color: str,
+        Color used to fill the countries
+    :param out: str,
+        Path to the resulting file
+    """
 
     # Download information
     try:
-        name, locations = get_information(id)
+        name, locations = get_information(orgid)
     except:
         LOGGER.error("Error downloading data from Catalogue of Life:", exc_info=True)
         sys.exit(1)
@@ -191,4 +202,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     main(args.id, args.color, args.out)
-

@@ -9,18 +9,15 @@ Usage
 
 Example:
 ````shell
-    python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
+python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````
 
 Options
 =======
 
-``--id``
-  Organism id from the Catalogue of Life
+`--id` Organism id from the Catalogue of Life
 
-``--color, optional``
-  Fill color of the countries the organism has been sampled from
+`--color` (Optional) Fill color of the countries the organism has been sampled from
   
-``--out, optional``
-  Path of the resulting map file
+`--out` (Optional) Path of the resulting map file
     

@@ -7,8 +7,9 @@ Generate world maps displaying the distribution of biological species. This scri
 Usage
 =====
 
-__Example:__
-Generating a map for Aspergillus niger. 
+__Example:__ Generating a map for Aspergillus niger.
+
+Lookup the id on the [Catalogue of Life](http://www.catalogueoflife.org/col/search/) website by searching for Aspergillus niger. The id is displayed in the url bar of the browser: `catalogueoflife.org/../id/ea00b3b8c44dbcf76443e20f78411dc2`
 ````shell
 python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````

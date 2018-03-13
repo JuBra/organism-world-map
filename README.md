@@ -13,7 +13,7 @@ python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````
 
 Output:
-![Example](https://github.com/JuBra/organism-world-map/raw/docs/img/example.svg)
+![Example](https://github.com/JuBra/organism-world-map/raw/docs/img/example.svg?sanitize=true)
 
 Options
 =======

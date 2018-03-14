@@ -7,11 +7,12 @@ Generate world maps displaying the distribution of biological species. This scri
 Usage
 =====
 
-__Example:__
+__Example - Generate a map for Aspergillus niger__
 
-To generate a map look up the id of the organism on the [catalogue of life](http://www.catalogueoflife.org/col/search/) website by searching for the name e.g. Aspergillus niger. The id is displayed in the url bar of the browser: catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`.
-
-Run the script:
+1. Search for Aspergillus niger in the catalogue [catalogue of life](http://www.catalogueoflife.org/col/search/)
+2. Get the organism id from the url bar of the browser: 
+catalogueoflife.org/col/details/species/id/`ea00b3b8c44dbcf76443e20f78411dc2`
+3. Run the script using the id:
 ````shell
 python generate_map.py --id ea00b3b8c44dbcf76443e20f78411dc2
 ````
